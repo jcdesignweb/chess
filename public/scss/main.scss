@@ -1,0 +1,42 @@
+#boardtable .wrapper {
+  padding-top: 5px;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+#boardtable .wrapper .square {
+  background-color: white;
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 0.15em 0.175em hsla(0, 0%, 0%, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #0b9dc1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  transition: 500ms;
+  transition-timing-function: ease;
+}
+
+#boardtable .wrapper .square .piece {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+#boardtable .wrapper .square .piece:hover {
+  transform: translateY(-4px);
+  transition: 500ms;
+  transition-timing-function: ease;
+}
+
+#boardtable .wrapper .square.white {
+  background: white;
+}
+
+#boardtable .wrapper .square.black {
+  background: #3a6e35;
+}
